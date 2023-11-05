@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.mouse-ball {
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.2s;
+}
+
+.generosity .navbar-nav .go-away {
+  color: #fff;
+}
+
+.generosity .navbar-nav .go-aways {
+  position: relative;
+  color: #fff;
+}
+
+.generosity .navbar-nav .go-aways:hover {
+  color: rgb(0, 197, 95);
+  /* transform: translate3d(360deg); */
+}
+.go-aways::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: red;
+  left: 0;
+  top: 0;
+}
